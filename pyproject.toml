@@ -1,6 +1,6 @@
 [project]
 name = "iflow-mcp_rafaelcartenet-databricks"
-version = "0.1.0"
+version = "0.1.1"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -11,4 +11,10 @@ dependencies = [
     "python-dotenv>=1.2.1",
 ]
 [project.scripts]
-databricks = "main:main"
+databricks = "iflow_mcp_rafaelcartenet_databricks.main:main"
+
+[tool.setuptools]
+packages = ["iflow_mcp_rafaelcartenet_databricks"]
+
+[tool.setuptools.package-data]
+"iflow_mcp_rafaelcartenet_databricks" = ["assets/*"]
